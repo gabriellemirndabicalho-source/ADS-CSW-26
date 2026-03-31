@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Roblox Oficial</title>
+    <style>
+        body {
+            /* Link direto da imagem que você enviou */
+            background-image: url('https://files.catbox.moe/p9rscw.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Efeito de vidro para o formulário ficar legível */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 480px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #111;
+            margin-top: 0;
+            font-size: 24px;
+            border-bottom: 2px solid #00b06f;
+            padding-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="number"], 
+        textarea, 
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: white;
+        }
+
+        /* Botões Estilo Roblox */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .btn-enviar {
+            background-color: #00b06f; /* Verde Roblox */
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 2;
+            text-transform: uppercase;
+        }
+
+        .btn-limpar {
+            background-color: #ff4545;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .btn-enviar:hover { background-color: #008e5a; }
+        .btn-limpar:hover { background-color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+    <div class="glass-panel">
+        <h2>FORMULÁRIO ROBLOX</h2>
+
+        <form>
+            <label>Nome:</label>
+            <input type="text" name="nome">
+
+            <label>Email Principal:</label>
+            <input type="email" name="email">
+
+            <label>Email Pater:</label>
+            <input type="email" name="email_pater">
+
+            <label>Email Pessoal:</label>
+            <input type="email" name="email_pessoal">
+
+            <label>Senha:</label>
+            <input type="password" name="senha">
+
+            <label>Idade:</label>
+            <input type="number" name="idade">
+
+            <label>Comentário:</label>
+            <textarea name="comentario" rows="2"></textarea>
+
+            <label>Opções:</label>
+            <div style="margin: 5px 0; font-size: 13px;">
+                <input type="checkbox" name="opcao1"> Opção 1
+                <input type="checkbox" name="opcao2"> Opção 2
+                <input type="checkbox" name="opcao3"> Opção 3
+            </div>
+
+            <label>Esporte favorito:</label>
+            <select name="esporte">
+                <option value="">Selecione</option>
+                <option value="futebol">Futebol</option>
+                <option value="basquete">Basquete</option>
+                <option value="volei">Vôlei</option>
+                <option value="natacao">Natação</option>
+            </select>
+
+            <div style="display: flex; gap: 10px;">
+                <div style="flex: 1;">
+                    <label>Data:</label>
+                    <input type="date" name="data">
+                </div>
+                <div style="flex: 1;">
+                    <label>Hora:</label>
+                    <input type="time" name="hora">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <input type="submit" value="Enviar Dados" class="btn-enviar">
+                <input type="reset" value="Limpar" class="btn-limpar">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
